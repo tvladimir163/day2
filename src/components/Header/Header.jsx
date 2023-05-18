@@ -1,11 +1,12 @@
-function Header({countInHeader}) {
+import { Form } from '../Form'
+import styles from './header.module.css'
+
+function Header({ addToList }) {
 
     return (
         <>
-            <header>Header</header>
-            <hr />
-            {countInHeader}
-            <hr />
+            <header className={styles.wrapper}>Header</header>
+            <Form addToList={addToList}/>
         </>
     )
 }
